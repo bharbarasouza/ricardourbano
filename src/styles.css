@@ -154,6 +154,53 @@
 
 }
 
+.hero-section2 {
+  text-align: center;
+  margin: 80px 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero-section2 h1 {
+  font-size: 25px;
+  font-weight: 300;
+  margin: 20px;
+  color: gray;
+}
+
+.hero-section2 h2 {
+  font-size: 22px;
+  padding: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+hr.solid {
+  border-top: 2px solid #bbb;
+  max-width: 80%;
+  display: block; 
+  margin: 0 auto;  
+}
+
+.hero-about {
+  margin-bottom: 30px;
+  font-family:'Montserrat', sans-serif;
+}
+
+.abouttext {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.coachphoto {
+  border-radius: 5px;
+}
+
+.hero-about2 {
+  margin-top: 80px;
+}
+
+
+
 /* Media query for responsive mode */
 @media (max-width: 820px) {
     .navbar {
