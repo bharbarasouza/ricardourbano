@@ -350,6 +350,27 @@ hr.solid {
   display: block;
   margin: 0 auto;
 }
+
+/*Services*/ 
+
+.servicesheader{
+  font-family: "Poppins", sans-serif;
+}
+.reviewsarea{
+  background-color: #F2E9E4;
+  border-radius: 5px;
+  padding: 50px;
+}
+
+.card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+
+}
+
+
+
+
+
 /* Media query for responsive mode */
 @media (max-width: 820px) {
     .navbar {
@@ -443,3 +464,6 @@ hr.solid {
       display: none;
     }
   }
+
+
+  
