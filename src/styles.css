@@ -419,6 +419,59 @@ hr.solid {
   font-weight: 500;  
 }
 
+.contact-banner {
+  background-image: url('/media/city.png'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  color: white;
+  height: 200px;
+  width: 100%;  
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+  color: white; 
+}  
+
+
+.contact-banner h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;  
+  font-size: 60px;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.5); 
+}
+
+.sidebarcontact {
+  display: block; 
+  margin-top: 50px;  
+}
+.bg-light {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2); 
+
+}
+.form-control {
+  width: 50%;
+  border-radius: 3px;
+}
+
+.contact-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.contact-details {
+  margin-left: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-header {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+
+
 /* Media query for responsive mode */
 @media (max-width: 820px) {
     .navbar {
