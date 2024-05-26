@@ -500,24 +500,30 @@ hr.solid {
   }
 
 
-  @media (max-width: 739px) {
+  @media (max-width: 740px) {
   .navbar-brand,
   .custom-toggler,
   .navbar-nav {
     text-align: center; /* Center the brand/logo, toggle button, and nav items */
     margin: 0 auto; /* Center the entire navbar */
   }
+  .navbar {
+    flex-direction: column; /* Stack items vertically */       
+}
 
-  
-    .navbar {
-        flex-direction: column; /* Stack items vertically */       
-    }
+.navbar-brand {
+  order: -1; /* Move the button to the top */
+}
 
-    .btn-nav {
-      display: block;
-      margin: 0 auto;  
-      margin-top: 20px;
- }   
+.btn-nav {
+order: -1;
+margin-bottom: 10px !important;
+display: block;
+margin: 0 auto;
+
+}
+
+
     .navbar-brand img {
         width: 250px;
         height: auto;
