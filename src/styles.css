@@ -594,10 +594,7 @@ margin: 0 auto !important;
   height: 100%;
 }
 
-iframe {
-  display: flex;
-  align-items: center !important;
-  justify-content: center !important;
+iframe {  
   margin: 0 auto !important;
   height: 300px;
   width: 300px;
@@ -605,9 +602,9 @@ iframe {
 }
 
 .map {
- 
   margin: 0 !important;
   padding: 0 !important;
+  margin-bottom: 20px !important;
 }
 
 .bottom-header{
