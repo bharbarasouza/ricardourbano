@@ -491,6 +491,11 @@ hr.solid {
   .custom-toggler:focus {
     outline: none;
   }
+
+  .footerlinks {
+    color: white;
+    text-decoration: none;
+  }
   
   @media (min-width: 992px) {
     /* Hide the custom toggler button on larger screens */
