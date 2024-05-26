@@ -645,14 +645,24 @@ iframe {
   margin: 0 auto;
   height: 300px;
   width: 300px;
+  margin-bottom: 10px;
 }
 
 .map {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 !important;
+  
+}
+
+.bottom-header{
+  font-size: 30px;
+  text-align: center;
   padding: 0;
+}
+
+.bottom-section {
+  margin: 0;
 }
 
 }
