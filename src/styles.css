@@ -1,5 +1,3 @@
-/*index*/
-
 .nav-link {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
@@ -432,14 +430,19 @@ hr.solid {
   justify-content: center; 
   text-align: center; 
   color: white; 
-}  
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.5); 
 
+}  
+.form-box {
+  background-color: #F2E9E4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+
+}
 
 .contact-banner h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;  
   font-size: 60px;
-  text-shadow: 0 0 12px rgba(0, 0, 0, 0.5); 
 }
 
 .sidebarcontact {
@@ -567,4 +570,64 @@ hr.solid {
   }
 
 
-  
+  @media (max-width: 739px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar-brand img {
+        width: 250px;
+        height: auto;
+    }
+
+    .navbar-toggler {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .btn-nav {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .navbar-collapse {
+      display: block;
+      margin: 0 auto;
+    }
+   
+    .navbar .nav-item.dropdown:hover .dropdown-menu {
+      display: none !important; 
+  }
+
+  .navbar .nav-item.dropdown > .dropdown-toggle::after {
+      display: none !important; 
+  }
+
+  .hero {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .content h1 {
+    font-size: 50px;
+    word-wrap: break-word;
+  }
+
+  .hero-section2 {
+    margin-top: 15px;
+  }
+
+  .hero-section2 h2 {
+    margin: 3px;
+    text-align: start;
+  }
+ 
+}
