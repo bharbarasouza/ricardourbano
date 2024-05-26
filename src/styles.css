@@ -652,18 +652,39 @@ iframe {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
   
 }
 
 .bottom-header{
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 30px;
   text-align: center;
   padding: 0;
 }
-
+.bottom-ph {
+  margin-bottom: 20px;
+  padding: 0;
+  text-align: center;
+}
 .bottom-section {
   margin: 0;
+  padding: 10px;
 }
+
+.buttom-btn {
+  margin-bottom: 20px;
+}
+
+.socials-footer {
+  margin-top: 0;
+}
+
+.signatureFooter {
+  margin-bottom: 20px;
+}
+
 
 }
 
