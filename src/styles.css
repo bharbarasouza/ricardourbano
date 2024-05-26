@@ -634,6 +634,11 @@ hr.solid {
 
   .solid {
     margin-bottom: 0;
+    padding: 0;
+  }
+
+  .hero-section2  {
+    margin-bottom: 40px;
   }
 
 .footer {
@@ -685,7 +690,46 @@ iframe {
   margin-bottom: 20px;
 }
 
+.hero-about .row {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.hero-about .col-md-6 img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.hero-about .col-md-6 {
+  text-align: center;
+}
+
+.hero-about2 {
+  display: flex;
+  flex-direction: column;
+}
+.hero-about2 .row {
+  display: flex;
+  flex-direction: column;
+}
+.hero-about2 .col-md-6 {
+  order: 2; 
+}
+.hero-about2 .col-md-6:first-child {
+  order: 1; 
+}
+.hero-about2 .col-md-6 img {
+  width: 100%; 
+  height: auto; 
+}
+
+
 
 }
+
+
+
 
 
