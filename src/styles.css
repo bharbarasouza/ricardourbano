@@ -513,7 +513,7 @@ hr.solid {
   .custom-toggler,
   .navbar-nav {
     text-align: center; /* Center the brand/logo, toggle button, and nav items */
-    margin: 0 auto; /* Center the entire navbar */
+    margin: 0 auto !important; /* Center the entire navbar */
    
   }
  
@@ -526,14 +526,16 @@ hr.solid {
 order: -1;
 margin-bottom: 10px !important;
 display: block;
-margin: 0 auto;
+margin: 0 auto !important;
 
 }
 
 
     .navbar-brand img {
-        width: 250px;
+        width: 270px;
         height: auto;
+        display: block !important;
+        margin: 0 auto !important;
     }
 
 
