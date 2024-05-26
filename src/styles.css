@@ -500,16 +500,23 @@ hr.solid {
   }
 
 
-  @media (max-width: 740px) {
+  @media (max-width: 914px) {
+
+ 
+ .container-fluid {
+  justify-content: center !important;
+  flex-direction: column;
+  margin: 0 auto !important;
+ }   
+
   .navbar-brand,
   .custom-toggler,
   .navbar-nav {
     text-align: center; /* Center the brand/logo, toggle button, and nav items */
     margin: 0 auto; /* Center the entire navbar */
+   
   }
-  .navbar {
-    flex-direction: column; /* Stack items vertically */       
-}
+ 
 
 .navbar-brand {
   order: -1; /* Move the button to the top */
