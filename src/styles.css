@@ -480,6 +480,10 @@ hr.solid {
   margin-bottom: 30px;
 }
 
+.service1-mobile {
+  display: none;
+}
+
 
 /* Media query for responsive mode */
 
@@ -519,6 +523,14 @@ hr.solid {
 
 
   @media (max-width: 914px) {
+
+ .service-desktop {
+  display: none;
+ }   
+
+ .service1-mobile {
+  display: block !important;
+ }
  
  .container-fluid {
   justify-content: center !important;
@@ -572,9 +584,7 @@ margin: 0 auto !important;
       display: none !important; 
   }
    
-  
-
-  .hero {
+ .hero {
     display: block;
     margin: 0 auto;
     width: 90%;
