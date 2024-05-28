@@ -480,6 +480,10 @@ hr.solid {
   margin-bottom: 30px;
 }
 
+.service1-mobile {
+  display: none;
+}
+
 
 /* Media query for responsive mode */
 
@@ -515,11 +519,22 @@ hr.solid {
       display: none;
     }
 
-   
+    .service1-mobile {
+      display: block !important;
+     }
+  }
 
    @media (max-width: 914px) {
 
-  .container-fluid {
+ .service-desktop {
+  display: none;
+ }   
+
+ .service1-mobile {
+  display: block !important;
+ }
+ 
+ .container-fluid {
   justify-content: center !important;
   flex-direction: column;
   margin: 0 auto !important;
@@ -714,5 +729,5 @@ iframe {
 }
 
 }
-  }
+
 
