@@ -480,10 +480,6 @@ hr.solid {
   margin-bottom: 30px;
 }
 
-.service1-mobile {
-  display: none;
-}
-
 
 /* Media query for responsive mode */
 
@@ -515,24 +511,15 @@ hr.solid {
   }
   
   @media (min-width: 992px) {
-    /* Hide the custom toggler button on larger screens */
-    .custom-toggler {
+     .custom-toggler {
       display: none;
     }
-  }
 
+   
 
-  @media (max-width: 914px) {
+   @media (max-width: 914px) {
 
- .service-desktop {
-  display: none;
- }   
-
- .service1-mobile {
-  display: block !important;
- }
- 
- .container-fluid {
+  .container-fluid {
   justify-content: center !important;
   flex-direction: column;
   margin: 0 auto !important;
@@ -726,13 +713,6 @@ iframe {
   margin-top: 20px;
 }
 
- 
-
-
-
 }
-
-
-
-
+  }
 
