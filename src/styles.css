@@ -731,7 +731,7 @@ iframe {
 }
 
 
-@media (max-width: 1180px) {
+@media (min-width: 1180px) {
 
   .sobre {
     width: 100%;
