@@ -40,13 +40,6 @@ a {
 }
 
 
-.nav-link {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: white;
-}
-
 .container-fluid {
   padding: 0;
 }
@@ -68,36 +61,58 @@ a {
     text-align: center; 
 }
 
-.nav-link {
-    position: relative;
-    color: white;
+/* Default nav-link styling */
+.nav-link { 
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #1a1b1f;  
+  position: relative;    
 }
-  
-.nav-link::before {
-      content: '';
-      position: absolute;
-      width: 95%;
-      height: 1px;
-      border-radius: 4px;
-      background-color: white;
-      bottom: 0;
-      left: 0;
-      transform-origin: right;
-      transform: scaleX(0);
-      transition: transform .3s ease-in-out;
-}
-  
-  .nav-link:hover::before {
-    transform-origin: left;
-    transform: scaleX(1);
-    color: white !important;
-  }
 
-  .nav-link:hover {
-    color: white !important;
+/* nav-link styling specifically for #navhero */
+#navhero {
+  color: white !important; /* Add !important to enforce white color */
 }
-  
-  
+
+/* Default styling for the before pseudo-element */
+.nav-link::before {
+  content: '';
+  position: absolute;
+  width: 95%;
+  height: 1px;
+  border-radius: 4px;
+  background-color: #2F2F2F;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+/* Styling for the before pseudo-element in #navhero */
+#navhero::before {
+  background-color: white !important; /* Add !important to enforce white color */
+}
+
+/* Default hover state for nav-link */
+.nav-link:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/* Hover state for nav-link in #navhero */
+#navhero:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/* Ensure the hover color for #navhero nav-links remains white */
+#navhero .nav-link:hover {
+  color: white !important; /* Add !important to enforce white color */
+}
+
+
 
 .btn {
         font-family: 'Montserrat', sans-serif;

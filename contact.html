@@ -25,7 +25,7 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid navbar-container">
       <a class="navbar-brand ms-5" href="index.html">
-       <img src="media/Ricardo Urbano - Logos (3)-cropped.svg" width="230" alt="">
+       <img src="media/Ricardo Urbano - Logos (3)-cropped.svg" width="270" alt="">
                 </a>
   <button class="custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   Menu <i class="fas fa-chevron-down"></i>
@@ -34,29 +34,19 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav justify-content-between">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="about.html">Sobre</a>
+            <a class="nav-link active" href="about.html">Sobre</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link" href="services.html">
               Serviços
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="services.html#service1">Coaching Individual</a>
-              <a class="dropdown-item" href="services.html#service2">Coaching de Relacionamentos</a>
-              <a class="dropdown-item" href="services.html#service3">Coaching Familiar</a>
-              <a class="dropdown-item" href="services.html#service4">Coaching em Grupos</a>
-              <a class="dropdown-item" href="services.html#service5">Coaching para Negócios</a>
-              <a class="dropdown-item" href="services.html#service6">Workshops e Palestras</a>
-
-
-            </div>
+            </a>           
           </li>
           
                         <li class="nav-item">
             <a class="nav-link" href="https://calendly.com/ricardourbano/intro" target="_blank">Agenda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contato</a> 
+            <a class="nav-link" aria-current="page" href="contact.html">Contato</a> 
           </li>
           </ul>
        </div>
@@ -80,6 +70,10 @@
                     <div class="container">
                         <div class="row">
                           <div class="col-md-6 ms-0 p-5 form-box">
+                            <form name="contact"
+                          method="POST"
+                          netlify-honeypot="bot-field"
+                          data-netlify="true">
                             <h1 class="text-center contact-title">Entre em Contato</h1>
                             <hr class="bg-light">
                             <h5 class="text-center"></h5>
@@ -103,6 +97,7 @@
                                 <textarea name="message" id="message" class="form-control m-1" placeholder="Deixe uma mensagem" cols="30" rows="4" required></textarea>
                               </div>
                               <div class="form-group d-flex justify-content-center mt-2">
+                                <div data-netlify-recaptcha="true"></div>
                                 <input type="submit" name="submit" id="submit" class="btn btn-dark btn-block" value="Enviar">
                               </div>
                             </form>                        
@@ -121,7 +116,7 @@
                               <i class="fa-regular fa-calendar fa-xl"></i>
                             <a class="contact-links" href="https://calendly.com/ricardourbano/intro" target="_blank">Agende um horário para conversar comigo</a>
                           </p>  
-                           
+                        </form>                           
                                 </div>
                               </div>
                             </div>                      
