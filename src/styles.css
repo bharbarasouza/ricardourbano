@@ -633,6 +633,10 @@ margin: 0 auto !important;
 
 }
 
+.btn {
+  background-color: #B10F2E;
+}
+
     .navbar-brand img {
         padding: 0 !important;
         width: 270px;
@@ -680,6 +684,12 @@ margin: 0 auto !important;
   .sobre {
     width: 100% !important;
     text-align: center;
+  }
+
+  .photo {
+    width: 100% ;
+    margin-bottom: 10px;
+
   }
 
   .hero-section2 {
