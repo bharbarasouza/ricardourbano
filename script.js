@@ -14,11 +14,11 @@ const handleSubmit = (event) => {
     if (response.ok) {
       alert("Obrigado pelo contato! Retornaremos o mais breve possível.");
     } else {
-      throw new Error("Network response was not ok.");
+      throw new Error("Houve um problema na submissão. Por favor tente novamente ou entre em contato via contato@ricardourbano.com.br");
     }
   })
   .catch((error) => alert(error));
 };
 
 // Add submit event listener to the form
-document.querySelector("#contact-form").addEventListener("submit", handleSubmit);
+document.querySelector("form").addEventListener("submit", handleSubmit);
