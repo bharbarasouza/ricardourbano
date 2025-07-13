@@ -338,6 +338,30 @@
 
 // Modal
 <script>
+  // Mostrar modal ao rolar a página
+  let modalShown = false;
+
+  window.addEventListener('scroll', function () {
+    if (!modalShown && window.scrollY > 300) {
+      document.getElementById('popupModal').style.display = 'block';
+      modalShown = true;
+    }
+  });
+
+  // Fechar modal ao clicar no X
+  document.querySelector('.close').addEventListener('click', function () {
+    document.getElementById('popupModal').style.display = 'none';
+  });
+
+  // Fechar modal ao clicar fora dele
+  window.addEventListener('click', function (e) {
+    const modal = document.getElementById('popupModal');
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+
+  // Submeter formulário e iniciar download do e-book
   document.getElementById('ebookForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -352,8 +376,8 @@
     .then(response => {
       if (response.ok) {
         alert("Formulário enviado com sucesso! Seu download começará agora.");
-        // Trigger e-book download
-        window.location.href = "/public/10 Insights para Descobrir e Focar no Seu Propósito.pdf"; // ajuste o caminho se necessário
+        document.getElementById('popupModal').style.display = 'none';
+        window.location.href = "/public/10%20Insights%20para%20Descobrir%20e%20Focar%20no%20Seu%20Propósito.pdf";
       } else {
         alert("Erro ao enviar o formulário. Tente novamente.");
       }
@@ -364,5 +388,6 @@
     });
   });
 </script>
+
 
     </body>
