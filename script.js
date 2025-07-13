@@ -22,3 +22,5 @@ const handleSubmit = (event) => {
 
 // Add submit event listener to the form
 document.querySelector("form").addEventListener("submit", handleSubmit);
+
+
