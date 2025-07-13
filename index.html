@@ -337,9 +337,8 @@
 </script>
 
 <script>
-  // Mostrar modal ao rolar a página
+  // Show modal on scroll
   let modalShown = false;
-
   window.addEventListener('scroll', function () {
     if (!modalShown && window.scrollY > 300) {
       document.getElementById('popupModal').style.display = 'block';
@@ -347,12 +346,11 @@
     }
   });
 
-  // Fechar modal ao clicar no X
+  // Close modal on click
   document.querySelector('.close').addEventListener('click', function () {
     document.getElementById('popupModal').style.display = 'none';
   });
 
-  // Fechar modal ao clicar fora dele
   window.addEventListener('click', function (e) {
     const modal = document.getElementById('popupModal');
     if (e.target === modal) {
@@ -360,7 +358,7 @@
     }
   });
 
-  // Submeter formulário e iniciar download do e-book
+  // Form submit and file download
   document.getElementById('ebookForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -376,7 +374,14 @@
       if (response.ok) {
         alert("Formulário enviado com sucesso! Seu download começará agora.");
         document.getElementById('popupModal').style.display = 'none';
-        window.open = "/public/10%20Insights%20para%20Descobrir%20e%20Focar%20no%20Seu%20Propósito.pdf";
+
+        // Force download
+        const a = document.createElement('a');
+        a.href = "/public/10%20Insights%20para%20Descobrir%20e%20Focar%20no%20Seu%20Propósito.pdf"; // Make sure this path is correct
+        a.download = "Ebook-Ricardo-Urbano.pdf";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
       } else {
         alert("Erro ao enviar o formulário. Tente novamente.");
       }
@@ -387,6 +392,7 @@
     });
   });
 </script>
+
 
 
     </body>
