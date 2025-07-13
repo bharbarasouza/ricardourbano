@@ -298,17 +298,12 @@
     <h2>Faça o Download de um E-book Grátis!</h2>
     <p>⭐10 Insights para Descobrir e Focar no Seu Propósito🚀</p>
     
-    <form action="https://formsubmit.co/ricardourbano8@gmail.com" method="POST">
-      <!-- Optional: Avoid spam -->
-      <input type="hidden" name="_captcha" value="false">          
+    <form id="ebookForm">
       <input type="text" name="name" placeholder="Seu Nome" required>
       <input type="email" name="email" placeholder="Seu email" required>
       <input type="tel" name="phone" placeholder="Seu Telefone" required>
-      
       <button type="submit">Baixar Agora</button>
     </form>
-  </div>
-</div>
 
 
   
@@ -340,41 +335,33 @@
     });
   });
 </script>
+
+// Modal
 <script>
-  let modalShown = false;
-
-  window.addEventListener('scroll', function () {
-    const scrollTriggerHeight = 300; // px scrolled before modal shows
-
-    if (!modalShown && window.scrollY > scrollTriggerHeight) {
-      document.getElementById('popupModal').style.display = 'block';
-      modalShown = true;
-    }
-  });
-
-  // Close modal
-  document.querySelector('.close').onclick = function () {
-    document.getElementById('popupModal').style.display = 'none';
-  };
-
-  // Form submit handler
   document.getElementById('ebookForm').addEventListener('submit', function (e) {
     e.preventDefault();
 
-    // You can collect data here
-    const formData = new FormData(this);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const phone = formData.get('phone');
+    const form = e.target;
+    const data = new FormData(form);
 
-    // Fake download link or trigger actual download
-    alert(`Obrigado, ${name}! Seu download começará em breve.`);
-
-    // Close modal after submission
-    document.getElementById('popupModal').style.display = 'none';
-
-    // Optional: Trigger e-book download
-    window.location.href = 'public/10 Insights para Descobrir e Focar no Seu Propósito.pdf'; // Replace with actual file URL
+    fetch("https://formsubmit.co/ajax/ricardourbano8@gmail.com", {
+      method: "POST",
+      headers: { 'Accept': 'application/json' },
+      body: data
+    })
+    .then(response => {
+      if (response.ok) {
+        alert("Formulário enviado com sucesso! Seu download começará agora.");
+        // Trigger e-book download
+        window.location.href = "/public/10 Insights para Descobrir e Focar no Seu Propósito.pdf"; // ajuste o caminho se necessário
+      } else {
+        alert("Erro ao enviar o formulário. Tente novamente.");
+      }
+    })
+    .catch(error => {
+      alert("Ocorreu um erro. Verifique sua conexão.");
+      console.error(error);
+    });
   });
 </script>
 
